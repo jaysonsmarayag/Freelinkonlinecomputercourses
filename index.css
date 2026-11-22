@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Public+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #1E3A5F;
+  --navy-deep: #152A45;
+  --teal: #0E7C7B;
+  --teal-deep: #0A5F5E;
+  --teal-soft: #E6F2F1;
+  --navy-soft: #EAF0F7;
+  --ink: #2B2B2B;
+  --muted: #5A5F66;
+  --line: #E8E2D8;
+  --surface: #FFFFFF;
+  --paper: #FDFBF6;
+  --gold: #C9A227;
+  --alert-bg: #FFF8D6;
+  --alert-border: #E8C547;
+  --alert-text: #5A4300;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --navy: #8FB0D8;
+    --navy-deep: #B9CCE6;
+    --teal: #4DB8B6;
+    --teal-deep: #7AD0CE;
+    --teal-soft: #173A39;
+    --navy-soft: #1E2A3A;
+    --ink: #F2EFE9;
+    --muted: #C2C4C7;
+    --line: #3A3A3A;
+    --surface: #1E1E1E;
+    --paper: #171716;
+    --gold: #E3C35A;
+    --alert-bg: #3A3010;
+    --alert-border: #E8C547;
+    --alert-text: #FFEFA8;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Public Sans', system-ui, -apple-system, sans-serif; }
+.font-display { font-family: 'Fraunces', Georgia, serif; }
+::selection { background: var(--teal); color: white; }
+a { color: inherit; }
+button { font: inherit; }

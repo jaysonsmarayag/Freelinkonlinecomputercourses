@@ -1,0 +1,11 @@
+{
+  "name": "free-harvard-courses-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A JavaScript course library dashboard for free public learning links.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check catalog.js && node --check server.js"
+  },
+  "license": "SEE LICENSE"
+}
